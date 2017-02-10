@@ -2,6 +2,9 @@
 Modified version of ["Rapid, Detail-Preserving Image Downscaling"](http://www.gcc.tu-darmstadt.de/home/proj/dpid/)
 
 # Usage
+## CUDA (gui):
+    dpid-gui <input-filename> [output-width=128] [output-height=0] [max-lambda=1] (<required> [optional])
+
 ## CUDA:
     dpid <input-filename> [output-width=128] [output-height=0] [lambda=1.0] (<required> [optional])
 
