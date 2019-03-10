@@ -132,7 +132,7 @@ function [ ] = dpid(filename, oWidth, oHeight, lambda)
                         f = 1;
                     else
                         f = norm(avg - reshape(iImage(iy + 1, ix + 1, :), [1 channels]));
-                        f = f / sqrt(255^2 * 3);
+                        % f = f / sqrt(255^2 * 3);
                         f = f ^ lambda;
                     end
                     
