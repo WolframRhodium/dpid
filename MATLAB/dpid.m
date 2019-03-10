@@ -70,7 +70,7 @@ function [ ] = dpid(filename, oWidth, oHeight, lambda)
                     if(ix < sx);        f = f * (1.0 - (sx - ix)); end;
                     if((ix+1) > ex);    f = f * (1.0 - ((ix+1) - ex)); end;
                     if(iy < sy);        f = f * (1.0 - (sy - iy)); end;
-                    if((iy+1) > sy);    f = f * (1.0 - ((iy+1) - ey)); end;
+                    if((iy+1) > ey);    f = f * (1.0 - ((iy+1) - ey)); end;
                     
                     avgImage(py + 1, px + 1, :) = avgImage(py + 1, px + 1, :) + (iImage(iy + 1, ix + 1, :) .* f);
                     avgF = avgF + f;
@@ -139,7 +139,7 @@ function [ ] = dpid(filename, oWidth, oHeight, lambda)
                     if(ix < sx);        f = f * (1.0 - (sx - ix)); end;
                     if((ix+1) > ex);    f = f * (1.0 - ((ix+1) - ex)); end;
                     if(iy < sy);        f = f * (1.0 - (sy - iy)); end;
-                    if((iy+1) > sy);    f = f * (1.0 - ((iy+1) - ey)); end;
+                    if((iy+1) > ey);    f = f * (1.0 - ((iy+1) - ey)); end;
                     
                     oImage(py + 1, px + 1, :) = oImage(py + 1, px + 1, :) + (iImage(iy + 1, ix + 1, :) * f);
                     oF = oF + f;
